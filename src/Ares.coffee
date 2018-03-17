@@ -1,7 +1,9 @@
 Validators = require './Validators'
 FakePromise = require './FakePromise'
 XmlParser = require 'xml-parser'
+Window = require('window');
 http = require 'browser-http'
+window = new Window();
 
 isWindow = typeof window != 'undefined'
 
